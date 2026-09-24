@@ -218,6 +218,7 @@ class Inline:
             ],
             [
                 self.ikb(text=lang["help"], callback_data="help", style=ButtonStyle.SUCCESS),
+                self.ikb(text="ꜱᴏᴜʀᴄᴇ", url="https://github.com/mgbnotfree-creator/Riya-Music-Bot", style=ButtonStyle.DANGER),
                 self.ikb(text="ʟᴀɴɢꜱ", callback_data="help_langs", style=ButtonStyle.PRIMARY),
             ],
             [
@@ -236,3 +237,4 @@ class Inline:
                 ],
             ]
         )
+        
