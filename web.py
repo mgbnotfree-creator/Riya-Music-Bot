@@ -3,6 +3,12 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import threading
 
 class HealthHandler(BaseHTTPRequestHandler):
+    # यह नया फंक्शन UptimeRobot की HEAD रिक्वेस्ट का सही जवाब देगा
+    def do_HEAD(self):
+        self.send_response(200)
+        self.send_header("Content-Type", "text/plain; charset=utf-8")
+        self.end_headers()
+
     def do_GET(self):
         if self.path in ("/", "/health", "/healthz"):
             body = b"OK"
@@ -30,3 +36,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+    
