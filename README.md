@@ -1,8 +1,8 @@
 <div align="center"> 
+<img width="1024" height="1024" alt="1790281960326" src="https://github.com/user-attachments/assets/f2076d07-89fa-482d-a24e-77128a40cabe" />
 
-<img src="https://graph.org/file/007501200a18fbe5b14ca-1c0adb48d248525fc8.jpg" width="400">
 
-# 🎵 Riya Music Bot
+# **🎸 ⌜ ʀ ɪ ʏ ʌ 𝒙 ᴍ ᴜ S ɪ ᴄ ⌟ ♪**
 
 ### Advanced Telegram Voice Chat Music Bot
 
@@ -21,6 +21,11 @@
 ![License](https://img.shields.io/badge/License-MIT-orange)
 
 ### 🎧 A Powerful Telegram Music Streaming Bot
+
+
+
+https://github.com/user-attachments/assets/8c7152da-3d53-4e63-abee-dba8192c1b43
+
 
 </div>
 
