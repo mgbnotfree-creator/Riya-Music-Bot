@@ -7,6 +7,7 @@ from pyrogram.enums import ButtonStyle
 
 from Elevenyts import app, config, lang
 
+
 class Inline:
     def __init__(self):
         self.ikm = types.InlineKeyboardMarkup
@@ -46,8 +47,7 @@ class Inline:
             ])
             keyboard.append([
                 self.ikb(
-                    text="AUTO",
-                    callback_data=f"controls autoplay {chat_id}",
+                    text="auto",
                     style=ButtonStyle.DANGER,
                 ),
                 self.ikb(
@@ -218,7 +218,7 @@ class Inline:
             ],
             [
                 self.ikb(text="Help", callback_data="help", style=ButtonStyle.SUCCESS),
-                self.ikb(text="SOURCE ↗", url="https://github.com/bishalkumarsahh-eng", style=ButtonStyle.DANGER),
+                self.ikb(text="SOURCE ↗", url="https://github.com/mgbnotfree-creator/Riya-Music-Bot", style=ButtonStyle.DANGER),
                 self.ikb(text="LANGS", callback_data="help_langs", style=ButtonStyle.PRIMARY),
             ],
             [
@@ -236,5 +236,5 @@ class Inline:
                     self.ikb(text="Watch on YouTube", url=link, style=ButtonStyle.PRIMARY),
                 ],
             ]
-            )
-            
+                                  )
+    
