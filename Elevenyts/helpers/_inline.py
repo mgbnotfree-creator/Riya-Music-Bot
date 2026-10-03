@@ -7,7 +7,6 @@ from pyrogram.enums import ButtonStyle
 
 from Elevenyts import app, config, lang
 
-
 class Inline:
     def __init__(self):
         self.ikm = types.InlineKeyboardMarkup
@@ -47,7 +46,8 @@ class Inline:
             ])
             keyboard.append([
                 self.ikb(
-                    text="auto",
+                    text="AUTO",
+                    callback_data=f"controls autoplay {chat_id}",
                     style=ButtonStyle.DANGER,
                 ),
                 self.ikb(
@@ -211,19 +211,19 @@ class Inline:
         rows = [
             [
                 self.ikb(
-                    text=lang["add_me"],
+                    text="Add Me to Your Group ↗",
                     url=f"https://t.me/{app.username}?startgroup=true",
                     style=ButtonStyle.PRIMARY,
                 )
             ],
             [
-                self.ikb(text=lang["help"], callback_data="help", style=ButtonStyle.SUCCESS),
-                self.ikb(text="ꜱᴏᴜʀᴄᴇ", url="https://github.com/mgbnotfree-creator/Riya-Music-Bot", style=ButtonStyle.DANGER),
-                self.ikb(text="ʟᴀɴɢꜱ", callback_data="help_langs", style=ButtonStyle.PRIMARY),
+                self.ikb(text="Help", callback_data="help", style=ButtonStyle.SUCCESS),
+                self.ikb(text="SOURCE ↗", url="https://github.com/bishalkumarsahh-eng", style=ButtonStyle.DANGER),
+                self.ikb(text="LANGS", callback_data="help_langs", style=ButtonStyle.PRIMARY),
             ],
             [
-                self.ikb(text=lang["support"], url=config.SUPPORT_CHAT, style=ButtonStyle.PRIMARY),
-                self.ikb(text=lang["channel"], url=config.SUPPORT_CHANNEL, style=ButtonStyle.PRIMARY),
+                self.ikb(text="Support ↗", url=config.SUPPORT_CHAT, style=ButtonStyle.PRIMARY),
+                self.ikb(text="Channel ↗", url=config.SUPPORT_CHANNEL, style=ButtonStyle.PRIMARY),
             ],
         ]
         return self.ikm(rows)
@@ -236,5 +236,5 @@ class Inline:
                     self.ikb(text="Watch on YouTube", url=link, style=ButtonStyle.PRIMARY),
                 ],
             ]
-        )
-        
+            )
+            
